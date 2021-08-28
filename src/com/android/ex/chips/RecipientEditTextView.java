@@ -668,6 +668,8 @@ public class RecipientEditTextView extends MultiAutoCompleteTextView implements
                     int availableHeightBelow = mRect.bottom - bottom;
                     if (availableHeightBelow > 0) {
                         setDropDownHeight(availableHeightBelow);
+                    } else if (entries != null){
+                        setDropDownHeight(entries.size() * (int) getContext().getResources().getDimension(R.dimen.chip_dropdown_height));
                     } else {
                         setDropDownHeight(mCoords[1]);
                     }
