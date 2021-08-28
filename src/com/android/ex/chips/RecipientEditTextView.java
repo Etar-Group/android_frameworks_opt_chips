@@ -669,7 +669,7 @@ public class RecipientEditTextView extends MultiAutoCompleteTextView implements
                     if (availableHeightBelow > 0) {
                         setDropDownHeight(availableHeightBelow);
                     } else {
-                        setDropDownHeight(250);
+                        setDropDownHeight(mCoords[1]);
                     }
                 }
 
