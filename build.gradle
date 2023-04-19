@@ -3,6 +3,7 @@ import org.gradle.api.artifacts.Dependency;
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'com.android.ex.chips'
     sourceSets.main {
         manifest.srcFile 'AndroidManifest.xml'
         java.srcDirs = ['src']
